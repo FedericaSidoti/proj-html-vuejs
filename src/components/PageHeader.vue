@@ -1,17 +1,12 @@
 <script>
+import {store} from '../store'
+
 export default {
     components: {
     },
     data() {
         return { 
-            navItems : [
-                "Home",
-                "Shop",
-                "Blog",
-                "Media",
-                "ShortCode",
-                "Features"
-            ] 
+            store: store,
         }
     }
 } 
@@ -21,7 +16,7 @@ export default {
     <div class="container">
         <img src="/img/logo.png">
         <ul class="nav">
-            <li v-for="item in navItems"> 
+            <li v-for="item in store.navItems"> 
                 <p>{{ item }}</p>
             </li>
         </ul>
