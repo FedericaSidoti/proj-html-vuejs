@@ -46,9 +46,21 @@ export default {
             <div class="row">
                 <div class="col-6">
                     <img src="/img/cms-banner-01.jpg">
+                    <div class="info">
+                        <div class="badge">
+                            <p class="badge-text">Most Popular</p>
+                        </div>
+                        <div class="info-text" >The Battlefield 4 Naval Strike</div>
+                    </div>
                 </div>
                 <div class="col-6">
                     <img src="/img/cms-banner-02.jpg">
+                    <div class="info">
+                        <div class="badge">
+                            <p class='badge-text'>Latest Game</p>
+                        </div>
+                        <div class="info-text">Assassin's Creed Unity Game</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,12 +72,17 @@ export default {
 @use '../styles/partials/variables.scss' as *;
 
 .row {
-    padding: 25px 0; 
+    padding: 25px 0px; 
+}
+
+.col-6 {
+    position: relative; 
 }
 .list {
     display: flex;
     justify-content: space-between;
     font-size: 13px; 
+    padding: 20px; 
 }
 
 .big-icon {
@@ -89,11 +106,27 @@ export default {
 
     &:not(:last-child)::after {
         content: ''; 
-        height: 20px; 
+        height: 25px; 
         width: 1px; 
-        background-color: gray;
+        background-color: rgba(55, 53, 53, 0.995);
         margin-left: 20px; 
     }
 }
 
+.info {
+    position: absolute; 
+    top: 60px; 
+    right: 30px;  
+    max-width: 200px; 
+    font-size: 20px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+    align-items: flex-start; 
+}
+
+
+.info-text {
+    font-weight: 800; 
+}
 </style>
