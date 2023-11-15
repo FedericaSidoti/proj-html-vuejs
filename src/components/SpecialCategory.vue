@@ -18,13 +18,31 @@ export default {
             </div>
             <div class="row">
                 <div class="col-4">
-                    <img src="/img/category-image-01-446x550_t.jpg">
+                    <figure class="category">
+                        <img src="/img/category-image-01-446x550_t.jpg">
+                        <div class="category-info">
+                            <p class="category-title">Batman</p>
+                            <a> Shop Now</a>
+                        </div>
+                    </figure>
                 </div>
                 <div class="col-4">
-                    <img src="/img/category-image-02-446x550_t.jpg">
+                    <figure class="category">
+                        <img src="/img/category-image-02-446x550_t.jpg">
+                        <div class="category-info">
+                            <p class="category-title">Bayonetta</p>
+                            <a> Shop Now</a>
+                        </div>
+                    </figure>
                 </div>
                 <div class="col-4">
-                    <img src="/img/category-image-03-446x550_t.jpg">
+                    <figure class="category">
+                        <img src="/img/category-image-03-446x550_t.jpg">
+                        <div class="category-info">
+                            <p class="category-title">Dark Souls</p>
+                            <a>Shop Now</a>
+                        </div>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -38,7 +56,6 @@ export default {
 .center {
     align-items: center; 
     justify-content: center; 
- 
 }
 
 h2 {
@@ -55,6 +72,21 @@ h2 {
         right: 50%; 
         transform: translate (50%); 
     }
+}
+
+.category{
+    position: relative; 
+}
+
+.category-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    left: 0; 
+    flex-direction: column; 
+    gap: 10px;
+    padding: 10px; 
 }
 
 </style>
