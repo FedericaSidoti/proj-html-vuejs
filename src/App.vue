@@ -1,8 +1,10 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
+import PageHero from './components/PageHero.vue';
 export default {
   components: {
     PageHeader,
+    PageHero,
   },
   data() {
     return {  
@@ -13,9 +15,12 @@ export default {
 
 <template>
   <PageHeader/>
+  <PageHero/>
 </template>
 
 <style lang="scss">
 @use './styles/general.scss';
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap');
+
+
 </style>

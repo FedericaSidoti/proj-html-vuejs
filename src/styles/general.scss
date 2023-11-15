@@ -18,7 +18,8 @@ img {
 
 body {
     background-image: url(/public/img/body-bg.jpg);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300; 
 }
 
 /*LAYOUT*/
@@ -33,7 +34,22 @@ body {
     margin: 0 auto; 
 }
 
+.section {
+    padding: 25px; 
+}
+
 .row {
     display: flex; 
     flex-wrap: wrap; 
+}
+
+.badge {
+    padding: 5px 10px; 
+    transform: skew(-20deg); 
+    background-color: #F9AA01;
+    display: inline-block; 
+}
+
+.badge-text {
+    transform: skew(20deg);
 }
