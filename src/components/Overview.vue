@@ -12,7 +12,6 @@ export default {
 
 <template>
     <section class="section">
-        <div class="container">
             <ul class="list">
                 <li class="list-item">
                     <font-awesome-icon class="big-icon" :icon="['fas', 'truck']" />
@@ -63,7 +62,6 @@ export default {
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 </template>
 

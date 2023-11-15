@@ -59,6 +59,11 @@ a{
     padding: 5px; 
 }
 
+.col-3 {
+    flex-basis: calc((100% / 12) * 3);
+    padding: 5px; 
+}
+
 /*Utilities*/
 
 .badge {
@@ -76,4 +81,9 @@ a{
 
 .light-text {
     color: gray; 
+}
+
+.center {
+    align-items: center; 
+    justify-content: center; 
 }

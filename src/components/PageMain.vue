@@ -2,11 +2,13 @@
 import PageHero from './PageHero.vue';
 import Overview from './Overview.vue';
 import SpecialCategory from './SpecialCategory.vue'
+import OurProducts from './OurProducts.vue';
 export default {
     components: {
         PageHero,
         Overview,
         SpecialCategory,
+        OurProducts,
     },
     data() {
         return {  
@@ -17,8 +19,12 @@ export default {
 
 <template>
     <PageHero/>
-    <Overview/>
-    <SpecialCategory/>
+    <div class="container">
+        <Overview/>
+        <SpecialCategory/>
+        <OurProducts/>
+    </div>
+    
 </template>
 
 <style lang="scss">
