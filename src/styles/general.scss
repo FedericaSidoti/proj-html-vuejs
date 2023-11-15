@@ -49,6 +49,11 @@ body {
     padding: 5px; 
 }
 
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+    padding: 5px; 
+}
+
 /*Utilities*/
 
 .badge {

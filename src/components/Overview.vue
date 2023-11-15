@@ -71,9 +71,6 @@ export default {
 
 @use '../styles/partials/variables.scss' as *;
 
-.row {
-    padding: 25px 0px; 
-}
 
 .col-6 {
     position: relative; 
@@ -83,6 +80,7 @@ export default {
     justify-content: space-between;
     font-size: 13px; 
     padding: 20px; 
+    margin-bottom: 15px; 
 }
 
 .big-icon {
