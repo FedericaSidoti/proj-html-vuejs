@@ -10,8 +10,10 @@ export default {
 </script>
 
 <template>
-  
+  <p>Hello</p>
 </template>
 
-<style>
+<style lang="scss">
+@use './styles/general.scss';
+@use './styles/partials/variables.scss'
 </style>
