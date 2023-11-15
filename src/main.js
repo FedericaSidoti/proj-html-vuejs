@@ -5,7 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
-library.add(faUser, faMagnifyingGlass, faShoppingBag)
+import { faTruck } from '@fortawesome/free-solid-svg-icons'
+import { faSackDollar } from '@fortawesome/free-solid-svg-icons'
+import { faPercentage } from '@fortawesome/free-solid-svg-icons'
+import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
+library.add(faUser, faMagnifyingGlass, faShoppingBag, faTruck, faSackDollar, faPercentage, faHandHoldingDollar)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)

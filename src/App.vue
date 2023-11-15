@@ -1,10 +1,10 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
-import PageHero from './components/PageHero.vue';
+import PageMain from './components/PageMain.vue';
 export default {
   components: {
     PageHeader,
-    PageHero,
+    PageMain,
   },
   data() {
     return {  
@@ -15,7 +15,7 @@ export default {
 
 <template>
   <PageHeader/>
-  <PageHero/>
+  <PageMain/>
 </template>
 
 <style lang="scss">
