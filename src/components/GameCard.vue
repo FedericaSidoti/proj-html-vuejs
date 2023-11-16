@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <img src="/img/cms-banner-01.jpg">
+    <img :src=" '/img/' + game.src ">
         <div class="info">
             <div class="badge">
                 <p class="badge-text">{{ game.tag }}</p>

@@ -12,16 +12,27 @@ export const store = reactive({
     gamesInEvidence : [
         {
             tag: 'Most Popular',
-            title: 'The Battlefield 4 Naval Strike'
+            title: 'The Battlefield 4 Naval Strike',
+            src: 'cms-banner-01.jpg'
         },
         {
             tag: 'Latest Game',
-            title: 'Assassin\'s Creed Unity Game'
+            title: 'Assassin\'s Creed Unity Game',
+            src: 'cms-banner-02.jpg'
         }
 
     ],
     gamesInDiscount : [
-
+        {
+            tag: '20% Discount',
+            title: 'Dragon\'s Dogma Videogame',
+            src: 'cms-banner-03.jpg'
+        },
+        {
+            tag: '30% Discount',
+            title: 'World Of Tanks New Game',
+            src: 'cms-banner-04.jpg'
+        }
     ],
     products : [
         {

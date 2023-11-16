@@ -1,9 +1,11 @@
 <script>
 import ProductCard from './ProductCard.vue';
+import GameCard from './GameCard.vue';
 import {store} from '../store';
 export default {
     components: {
         ProductCard,
+        GameCard,
     },
     data() {
         return { 
@@ -35,8 +37,12 @@ export default {
             </div>
         </div>
         <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6"></div>
+            <div class="col-6 p-rel"
+            v-for="game in store.gamesInDiscount">
+                <GameCard
+                :game = game
+                />
+            </div>
         </div>
     </div>
 
@@ -55,6 +61,10 @@ export default {
         border: 1px solid $darkgray; 
         padding: 10px 20px; 
     }
+}
+
+.p-rel {
+    position: relative;
 }
 
 </style>
