@@ -15,7 +15,31 @@ import { faComments } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-library.add(faUser, faMagnifyingGlass, faShoppingBag, faTruck, faSackDollar, faPercentage, faHandHoldingDollar, faCircle, faCalendarDays, faComments, faLocationDot, faPhone, faEnvelope)
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
+import { faSkype } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+library.add(faUser, 
+    faMagnifyingGlass, 
+    faShoppingBag, 
+    faTruck, 
+    faSackDollar, 
+    faPercentage, 
+    faHandHoldingDollar, 
+    faCircle, 
+    faCalendarDays, 
+    faComments, 
+    faLocationDot, 
+    faPhone, 
+    faEnvelope, 
+    faPaperPlane,
+    faFacebookF,
+    faTwitter,
+    faGooglePlusG,
+    faSkype,
+    faInstagram)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)

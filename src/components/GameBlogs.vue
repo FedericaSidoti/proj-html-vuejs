@@ -38,6 +38,10 @@ export default {
 
 <style scoped>
 
+.center {
+    padding: 20px 0; 
+}
+
 .col-4 {
     border-bottom: 1px solid gray; 
     padding: 20px 0; 
@@ -48,6 +52,6 @@ export default {
 }
 .partners {
     justify-content: space-between; 
-    padding: 40px 0; 
+    padding: 40px 0 0 0 ; 
 }
 </style>
