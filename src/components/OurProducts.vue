@@ -10,6 +10,39 @@ export default {
     data() {
         return { 
             store: store,
+            currentArray: [],
+            currentIndex: 0,
+        }
+    },
+    methods : {
+        nextButton (){
+            this.currentIndex ++; 
+
+            if (this.currentIndex === this.store.menuProducts.length) {
+                this.currentIndex = 0
+            }
+        }, 
+        prewButton() {
+            this.currentIndex --; 
+
+            if (this.currentIndex === -1) {
+                this.currentIndex = this.store.menuProducts.length -1
+            }
+        }    
+    },
+    computed : {
+        arrayActive : function(){
+            if (this.currentIndex === 0) {
+                this.currentArray = this.store.products.featured
+                return this.currentArray
+            } else if (this.currentIndex === 1) {
+                this.currentArray = this.store.products.newArrivals
+                return this.currentArray
+            } else {
+                this.currentArray = this.store.products.bestSellers
+                return this.currentArray
+            }
+            
         }
     }
 } 
@@ -21,19 +54,27 @@ export default {
             <div class='section-info'>
                 <h2 class="section-title">Our Products</h2>
                 <ul class="list-border">
-                    <li class="item-border">Featured</li>
-                    <li class="item-border">New Arrivals</li>
-                    <li class="item-border">Best Sellers</li>
+                    <li class="item-border"  
+                    v-for="item, index in store.menuProducts"
+                    :class="index === currentIndex? 'active-text' : ''">
+                    {{ item }}</li>
                 </ul>
             </div>
             
         </div>
-        <div class="row">
+        <div class="row" v-for="item, index in store.menuProducts"
+        :class="index === currentIndex? 'active' : 'd-none'">
             <div class="col-3"
-            v-for="product in store.products">
+            v-for="product, index in arrayActive">
                 <ProductCard
                 :product = product
                 />
+            </div>
+            <div class="next" @click="nextButton()">
+                <img src="/img/next.png">
+            </div>
+            <div class="prew" @click="prewButton()">
+                <img src="/img/previous.png">
             </div>
         </div>
         <div class="row">
@@ -54,6 +95,37 @@ export default {
 
 .p-rel {
     position: relative;
+}
+
+.row {
+    position: relative; 
+}
+
+.active-text {
+    color: $yellow; 
+}
+
+.d-none {
+    display: none;
+    z-index: -1;  
+}
+
+.active {
+    display: flex; 
+}
+
+.next {
+    position: absolute; 
+    top: 100px; 
+    right: -20px; 
+    cursor: pointer; 
+}
+
+.prew {
+    position: absolute; 
+    top: 100px; 
+    left: -20px; 
+    cursor: pointer;
 }
 
 </style>
