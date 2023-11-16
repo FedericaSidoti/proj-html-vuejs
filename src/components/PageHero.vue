@@ -54,6 +54,9 @@ h1 {
 
 .btn{
     padding: 4px 6px; 
+    &:hover {
+        background-color: $yellow;
+    }
 }
 
 </style>
