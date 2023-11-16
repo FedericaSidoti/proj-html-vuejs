@@ -9,15 +9,18 @@ export default {
         return { 
             store: store,
             currentIndex : 0,
+            currentDot : 0,
         }
     },
     methods : {
         changeCard(i) {
             this.currentIndex = i ; 
             this.currentIndex++;
+            this.currentDot ++ ; 
 
             if(this.currentIndex=== this.store.members.length) {
                 this.currentIndex = 0 ; 
+                this.currentDot = 0; 
             }
         }
     }
@@ -37,9 +40,11 @@ export default {
                     />
                 </div>
                 <div class="index">
-                    <font-awesome-icon :icon="['fas', 'circle']" />
-                    <font-awesome-icon :icon="['fas', 'circle']" />
-                    <font-awesome-icon :icon="['fas', 'circle']" />
+                    <span class="wrap-icon"
+                    v-for="item, index in store.members"
+                    :class="index===currentDot? 'active-text' : ''">
+                        <font-awesome-icon :icon="['fas', 'circle']" />
+                    </span>
                 </div>
             </div>
         </div>
@@ -48,10 +53,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as * ;
 .container-fluid {
     max-width: 100%;
     margin: 0 auto; 
     background-image: url(/img/parallax.jpg);
+}
+
+.active-text {
+    color: $yellow;  
 }
 
 .container {
