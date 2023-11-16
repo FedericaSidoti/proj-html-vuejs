@@ -23,6 +23,7 @@ export default {
                         <p class="category-title">Batman</p>
                         <a> Shop Now</a>
                     </div>
+                    <p class="tag">Batman</p>
                 </figure>
             </div>
             <div class="col-4">
@@ -53,6 +54,13 @@ export default {
 
 .category{
     position: relative; 
+    &:hover .category-info{
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    &:hover .tag {
+        display: inline-block; 
+    }
 }
 
 .category-info {
@@ -64,6 +72,17 @@ export default {
     flex-direction: column; 
     gap: 10px;
     padding: 10px; 
+}
+
+.tag {
+    background-color: white;
+    color: black;
+    padding: 5px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: none; 
 }
 
 </style>
