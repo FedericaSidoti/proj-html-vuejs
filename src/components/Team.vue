@@ -31,14 +31,12 @@ export default {
     <div class='container-fluid'>
         <div class="section">
             <div class="container">
-                <div class="card-wrap">
                     <TeamCard
                     v-for="member, index in store.members"
                     :class="index === currentIndex? 'active': 'b-card'"
                     @click="changeCard(index)"
                     :member = member
                     />
-                </div>
                 <div class="index">
                     <span class="wrap-icon"
                     v-for="item, index in store.members"
@@ -58,6 +56,9 @@ export default {
     max-width: 100%;
     margin: 0 auto; 
     background-image: url(/img/parallax.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;  
 }
 
 .active-text {
@@ -68,9 +69,8 @@ export default {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    text-align: center; 
-    position: relative; 
-    padding: 100px 0; 
+    text-align: center;
+    padding: 80px 0; 
 }
 
 .card-team {
@@ -89,6 +89,8 @@ export default {
     font-size: 10px; 
     display: flex; 
     gap: 10px; 
+    position: absolute;
+    bottom: 20px;  
 }
 
 
