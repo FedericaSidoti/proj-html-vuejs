@@ -29,6 +29,9 @@ export default {
             </div>
         </div>
         <div class="row partners">
+            <div v-for="partner in store.partners">
+                <img class="logo" :src=" '/img/' + partner ">
+            </div>
         </div>
     </div>
 </template>
@@ -40,7 +43,11 @@ export default {
     padding: 20px 0; 
 }
 
+.logo {
+    width: 110px; 
+}
 .partners {
     justify-content: space-between; 
+    padding: 40px 0; 
 }
 </style>

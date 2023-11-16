@@ -35,7 +35,6 @@ export default {
     <div class="container">
         <GameBlogs/>
     </div>
-    
 </template>
 
 <style lang="scss">

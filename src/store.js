@@ -133,5 +133,12 @@ export const store = reactive({
             comments: 0, 
             src : 'Rerum-facilis-est-et-exped.jpg'
         }
+    ],
+    partners : [
+        'brand-01.png',
+        'brand-02.png',
+        'brand-03.png',
+        'brand-04.png',
+        'brand-05.png'
     ]
 })
