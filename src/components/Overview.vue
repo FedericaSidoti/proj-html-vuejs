@@ -17,30 +17,30 @@ export default {
     <section class="section">
             <ul class="list">
                 <li class="list-item">
-                    <font-awesome-icon class="big-icon" :icon="['fas', 'truck']" />
+                    <font-awesome-icon class="big-icon trigger" :icon="['fas', 'truck']" />
                     <div>
-                        <p>Free Delivery</p>
+                        <p class="trigger">Free Delivery</p>
                         <p class="light-text">Free shipping on all orders</p>
                     </div>
                 </li>
                 <li class="list-item">
-                    <font-awesome-icon class="big-icon" :icon="['fas', 'sack-dollar']" />
+                    <font-awesome-icon class="big-icon trigger" :icon="['fas', 'sack-dollar']" />
                     <div>
-                        <p>Money Return</p>
+                        <p class="trigger">Money Return</p>
                         <p class="light-text">Back Guarantee in 7 days</p>
                     </div>
                 </li>
                 <li class="list-item">
                     <font-awesome-icon class="circle" :icon="['fas', 'percent']" />
                     <div>
-                        <p>Member Discount</p>
+                        <p class="trigger">Member Discount</p>
                         <p class="light-text">On every order over $130</p>
                     </div>
                 </li>
                 <li class="list-item">
-                    <font-awesome-icon class="big-icon" :icon="['fas', 'hand-holding-dollar']" />
+                    <font-awesome-icon class="big-icon trigger" :icon="['fas', 'hand-holding-dollar']" />
                     <div>
-                        <p>Return Policy</p>
+                        <p class="trigger">Return Policy</p>
                         <p class="light-text">Support 24 hours a day</p>
                     </div>
                 </li>
@@ -97,6 +97,14 @@ export default {
         background-color: $darkgray;
         margin-left: 20px; 
     }
+
+    &:hover .trigger{
+        color: $yellow; 
+    }
+
+    &:hover .circle {
+        background-color: $yellow;
+    }
 }
 
 .info {
@@ -110,7 +118,6 @@ export default {
     gap: 10px; 
     align-items: flex-start; 
 }
-
 
 .info-text {
     font-weight: 800; 
