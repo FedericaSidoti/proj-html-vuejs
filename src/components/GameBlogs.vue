@@ -20,12 +20,26 @@ export default {
         <div class="row center">
             <h2 class="section-title">New Game Blog</h2>
         </div>
-        <div class="row">
+        <div class="row arrows">
             <div class="col-4"
             v-for="blog in store.blogs">
                 <CardBlog
                 :blog = blog 
                 />
+                <div class="hover-wrap">
+                    <span class="icon-wrap">
+                        <font-awesome-icon :icon="['fas', 'plus']" />
+                    </span>
+                    <span class="icon-wrap">
+                        <font-awesome-icon :icon="['fas', 'link']" />
+                    </span>
+                </div>
+            </div>
+            <div class="arrow next">
+                <img src="/img/next.png">
+            </div>
+            <div class="arrow prew">
+                <img src="/img/previous.png">
             </div>
         </div>
         <div class="row partners">
@@ -36,7 +50,7 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .center {
     padding: 20px 0; 
@@ -44,7 +58,28 @@ export default {
 
 .col-4 {
     border-bottom: 1px solid gray; 
-    padding: 20px 0; 
+    padding: 15px; 
+    position: relative;
+
+    &:hover .hover-wrap {
+        display: flex ; 
+    }
+}
+
+.hover-wrap {
+    position: absolute;
+    display: none; 
+    gap: 10px; 
+    top: 100px; 
+    left: 50%; 
+    transform: translate(-50%);
+
+    .icon-wrap {
+        padding: 10px 12px; 
+        border-radius: 50%; 
+        border: 2px solid white; 
+        color: white; 
+    }
 }
 
 .logo {
@@ -53,5 +88,26 @@ export default {
 .partners {
     justify-content: space-between; 
     padding: 40px 0 0 0 ; 
+}
+.arrows {
+    position: relative; 
+    &:hover .arrow{
+        display: inline-block; 
+    }
+
+    .arrow {
+        display: none; 
+        position: absolute; 
+        top: 100px; 
+        opacity: 0.8; 
+    }
+
+    .next {
+        right: -10px; 
+    }
+
+    .prew {
+        left: -10px; 
+    }
 }
 </style>

@@ -21,6 +21,8 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 import { faSkype } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 library.add(faUser, 
     faMagnifyingGlass, 
     faShoppingBag, 
@@ -39,7 +41,9 @@ library.add(faUser,
     faTwitter,
     faGooglePlusG,
     faSkype,
-    faInstagram)
+    faInstagram,
+    faPlus,
+    faLink)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
