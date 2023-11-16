@@ -104,7 +104,7 @@ export default {
         content: ''; 
         height: 25px; 
         width: 1px; 
-        background-color: rgba(55, 53, 53, 0.995);
+        background-color: $darkgray;
         margin-left: 20px; 
     }
 }

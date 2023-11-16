@@ -43,10 +43,13 @@ export default {
 
 
 .list {
-    display: flex; 
-
+    display: flex;  
+    margin-bottom: 25px;
     li {
-        border: 1px solid gray; 
+        font-size: 12px; 
+        font-weight: 500; 
+        border: 1px solid $darkgray; 
+        padding: 10px 20px; 
     }
 }
 
