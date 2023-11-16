@@ -5,6 +5,7 @@ import SpecialCategory from './SpecialCategory.vue';
 import OurProducts from './OurProducts.vue';
 import Deals from './Deals.vue';
 import Team from './Team.vue';
+import GameBlogs from './GameBlogs.vue';
 export default {
     components: {
         PageHero,
@@ -13,6 +14,7 @@ export default {
         OurProducts,
         Deals,
         Team,
+        GameBlogs,
     },
     data() {
         return {  
@@ -30,6 +32,9 @@ export default {
         <Deals/>
     </div>
     <Team/>
+    <div class="container">
+        <GameBlogs/>
+    </div>
     
 </template>
 

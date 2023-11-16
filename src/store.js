@@ -113,5 +113,25 @@ export const store = reactive({
             cit : 'La gente non smette di giocare perché diventa vecchia; diventa vecchia perché smette di giocare.',
             src: 't2-1-100x100_left.jpg'
         }
+    ],
+    blogs : [
+        {
+            name : 'On The Last Of Us: Lorem Ipsum is simply text',
+            date: 'Jen 18, 2021',
+            comments: 0,
+            src : 'Nisi-ut-aliquid-ex-ea-com.jpg'
+        },
+        {
+            name : 'On Dragon Age: Lorem Ipsum is simply text',
+            date: 'May 30, 2021',
+            comments: 0, 
+            src : 'Omnis-iste-natus-error-sit.jpg'
+        },
+        {
+            name : 'On The Witcher: Lorem Ipsum is simply text',
+            date: 'Apr 13, 2021',
+            comments: 0, 
+            src : 'Rerum-facilis-est-et-exped.jpg'
+        }
     ]
 })

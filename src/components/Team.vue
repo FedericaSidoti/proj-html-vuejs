@@ -90,7 +90,7 @@ export default {
     display: flex; 
     gap: 10px; 
     position: absolute;
-    bottom: 20px;  
+    bottom: 30px;  
 }
 
 
