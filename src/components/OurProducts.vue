@@ -16,7 +16,15 @@ export default {
 <template>
     <div class="section">
         <div class="row center">
-            <h2>Our Products</h2>
+            <div class='section-info'>
+                <h2 class="section-title">Our Products</h2>
+                <ul class="list">
+                    <li>Featured</li>
+                    <li>New Arrivals</li>
+                    <li>Best Sellers</li>
+                </ul>
+            </div>
+            
         </div>
         <div class="row">
             <div class="col-3"
@@ -30,6 +38,16 @@ export default {
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as * ; 
+
+
+.list {
+    display: flex; 
+
+    li {
+        border: 1px solid gray; 
+    }
+}
 
 </style>

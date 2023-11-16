@@ -87,3 +87,20 @@ a{
     align-items: center; 
     justify-content: center; 
 }
+
+.section-title {
+    margin-bottom: 20px; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 5px; 
+    justify-content: center; 
+    align-items: center; 
+    &::after {
+        content: '';
+        width: 30px; 
+        height: 2px; 
+        background-color: #F9AA01;
+        display: block; 
+    }
+}

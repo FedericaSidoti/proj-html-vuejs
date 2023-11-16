@@ -13,7 +13,7 @@ export default {
 <template>
     <div class="section">
         <div class="row center">
-            <h2>Special Category</h2>
+            <h2 class="section-title">Special Category</h2>
         </div>
         <div class="row">
             <div class="col-4">
@@ -50,22 +50,6 @@ export default {
 
 <style lang='scss' scoped>
 @use '../styles/partials/variables.scss' as * ; 
-
-h2 {
-    margin-bottom: 20px; 
-    position: relative;
-    &::after {
-        content: '';
-        position: absolute; 
-        width: 30px; 
-        height: 2px; 
-        background-color: $yellow;
-        display: block; 
-        top: 40px; 
-        right: 50%; 
-        transform: translate (50%); 
-    }
-}
 
 .category{
     position: relative; 
