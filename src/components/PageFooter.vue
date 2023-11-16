@@ -92,6 +92,10 @@ export default {
         gap: 15px; 
         align-items : flex-start; 
         margin-right: 15px; 
+
+        &:hover {
+            color: $yellow; 
+        }
     }
 }
 

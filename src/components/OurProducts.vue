@@ -98,7 +98,7 @@ export default {
 }
 
 .row {
-    position: relative; 
+    position: relative;  
 }
 
 .active-text {
