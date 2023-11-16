@@ -58,12 +58,12 @@ export default {
                                 <font-awesome-icon :icon="['fas', 'paper-plane']" />
                             </button>
                         </div>
-                        <div class="social">
-                            <font-awesome-icon :icon="['fab', 'facebook-f']" />
-                            <font-awesome-icon :icon="['fab', 'twitter']" />
-                            <font-awesome-icon :icon="['fab', 'google-plus-g']" />
-                            <font-awesome-icon :icon="['fab', 'skype']" />
-                            <font-awesome-icon :icon="['fab', 'instagram']" />
+                        <div class="socials">
+                            <font-awesome-icon class="social" :icon="['fab', 'facebook-f']" />
+                            <font-awesome-icon class="social" :icon="['fab', 'twitter']" />
+                            <font-awesome-icon class="social" :icon="['fab', 'google-plus-g']" />
+                            <font-awesome-icon class="social" :icon="['fab', 'skype']" />
+                            <font-awesome-icon class="social" :icon="['fab', 'instagram']" />
                         </div>
                     </div>
                 </div>
@@ -108,9 +108,13 @@ export default {
     color : $yellow; 
 }
 
-.social {
+.socials {
     display: flex; 
     gap: 20px; 
+}
+
+.social:hover {
+    color: $yellow; 
 }
 
 .input-wrap {
