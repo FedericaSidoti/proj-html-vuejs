@@ -93,5 +93,25 @@ export const store = reactive({
             price: 90,
             src: '03-768x768.jpg'
         },
+    ],
+    members : [
+        {
+            name: 'Lules Charles',
+            role: 'Web Designer',
+            cit : 'Maturità dell\'uomo significa avere ritrovato la serietà che si metteva nel gioco da bambini.',
+            src: 't5-1-100x100_left.jpg'
+        },
+        {
+            name: 'Mark Gaskel',
+            role: 'Social Media Manager',
+            cit : 'Il lavoro consiste in qualsiasi cosa il corpo sia obbligato a fare... Giocare consiste in qualsiasi cosa che il corpo non sia obbligato a fare.',
+            src: 't4-1-100x100_left.jpg'
+        },
+        {
+            name: 'Johnny Bravo',
+            role: 'Producer',
+            cit : 'La gente non smette di giocare perché diventa vecchia; diventa vecchia perché smette di giocare.',
+            src: 't2-1-100x100_left.jpg'
+        }
     ]
 })

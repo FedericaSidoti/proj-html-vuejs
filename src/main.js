@@ -9,7 +9,8 @@ import { faTruck } from '@fortawesome/free-solid-svg-icons'
 import { faSackDollar } from '@fortawesome/free-solid-svg-icons'
 import { faPercentage } from '@fortawesome/free-solid-svg-icons'
 import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
-library.add(faUser, faMagnifyingGlass, faShoppingBag, faTruck, faSackDollar, faPercentage, faHandHoldingDollar)
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
+library.add(faUser, faMagnifyingGlass, faShoppingBag, faTruck, faSackDollar, faPercentage, faHandHoldingDollar, faCircle)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
