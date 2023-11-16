@@ -1,4 +1,5 @@
 /*RESET*/
+@use '../styles/partials/variables.scss' as * ; 
 
 *{
     margin: 0;
@@ -20,11 +21,11 @@ body {
     background-image: url(/public/img/body-bg.jpg);
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 300; 
-    color : white; 
+    color : $white; 
 }
 
 a{
-    color: #F9AA01; 
+    color: $yellow; 
     text-decoration: underline; 
 }
 
@@ -69,7 +70,7 @@ a{
 .badge {
     padding: 5px 10px; 
     transform: skew(-20deg); 
-    background-color: #F9AA01;
+    background-color: $yellow;
     display: inline-block; 
 }
 
@@ -100,7 +101,7 @@ a{
         content: '';
         width: 30px; 
         height: 2px; 
-        background-color: #F9AA01;
+        background-color: $yellow;
         display: block; 
     }
 }
@@ -111,7 +112,7 @@ a{
     .item-border {
         font-size: 12px; 
         font-weight: 500; 
-        border: 1px solid rgba(55, 53, 53, 0.995); 
-        padding: 10px 20px; 
+        border: 1px solid $darkgray; 
+        padding: 10px 15px; 
     }
 }
