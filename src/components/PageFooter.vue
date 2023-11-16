@@ -1,9 +1,11 @@
 <script>
+import {store} from '../store' ; 
 export default {
     components: {
     },
     data() {
         return {  
+            store: store,
         }
     },
 } 
@@ -31,6 +33,23 @@ export default {
                             </li>
                         </ul>
                     </div>
+                    <div class="col-4">
+                        <h3 class="footer-title">Informations</h3>
+                        <ul class="list-footer">
+                            <li v-for="info in store.informations">
+                                {{ info }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h3 class="footer-title">Extras</h3>
+                        <ul class="list-footer">
+                            <li v-for="extra in store.extras">
+                                {{ extra }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4"></div>
                 </div>
             </div>
         </div>
@@ -47,17 +66,17 @@ export default {
     font-weight: 500; 
     margin-bottom: 20px; 
 }
-
 .list-footer {
     display: flex; 
     flex-direction: column;
     gap: 10px; 
+    font-size: 14px; 
 
     li {
         display: flex; 
         gap: 15px; 
         align-items : flex-start; 
-        margin-right: 8px; 
+        margin-right: 15px; 
     }
 }
 

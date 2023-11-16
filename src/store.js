@@ -140,5 +140,19 @@ export const store = reactive({
         'brand-03.png',
         'brand-04.png',
         'brand-05.png'
+    ], 
+    informations: [
+        'Bookmark',
+        'Features',
+        'Sitemap',
+        'Lists',
+        'Contact Us'
+    ],
+    extras : [
+        'Delivery',
+        'Cart',
+        'Terms Conditions',
+        'My Account',
+        'About Us'
     ]
 })
