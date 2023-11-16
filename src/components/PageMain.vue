@@ -1,14 +1,16 @@
 <script>
 import PageHero from './PageHero.vue';
 import Overview from './Overview.vue';
-import SpecialCategory from './SpecialCategory.vue'
+import SpecialCategory from './SpecialCategory.vue';
 import OurProducts from './OurProducts.vue';
+import Deals from './Deals.vue';
 export default {
     components: {
         PageHero,
         Overview,
         SpecialCategory,
         OurProducts,
+        Deals,
     },
     data() {
         return {  
@@ -23,6 +25,7 @@ export default {
         <Overview/>
         <SpecialCategory/>
         <OurProducts/>
+        <Deals/>
     </div>
     
 </template>

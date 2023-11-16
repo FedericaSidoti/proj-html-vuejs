@@ -20,10 +20,10 @@ export default {
         <div class="row center">
             <div class='section-info'>
                 <h2 class="section-title">Our Products</h2>
-                <ul class="list">
-                    <li>Featured</li>
-                    <li>New Arrivals</li>
-                    <li>Best Sellers</li>
+                <ul class="list-border">
+                    <li class="item-border">Featured</li>
+                    <li class="item-border">New Arrivals</li>
+                    <li class="item-border">Best Sellers</li>
                 </ul>
             </div>
             
@@ -51,17 +51,6 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as * ; 
 
-
-.list {
-    display: flex;  
-    margin-bottom: 25px;
-    li {
-        font-size: 12px; 
-        font-weight: 500; 
-        border: 1px solid $darkgray; 
-        padding: 10px 20px; 
-    }
-}
 
 .p-rel {
     position: relative;

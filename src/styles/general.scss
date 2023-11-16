@@ -104,3 +104,14 @@ a{
         display: block; 
     }
 }
+
+.list-border {
+    display: flex;  
+    margin-bottom: 25px;
+    .item-border {
+        font-size: 12px; 
+        font-weight: 500; 
+        border: 1px solid rgba(55, 53, 53, 0.995); 
+        padding: 10px 20px; 
+    }
+}
