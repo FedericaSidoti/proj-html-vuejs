@@ -1,10 +1,13 @@
 <script>
-
+import GameCard from './GameCard.vue';
+import {store} from '../store';
 export default {
     components: {
+        GameCard,
     },
     data() {
         return { 
+            store:store,
         }
     }
 } 
@@ -43,23 +46,10 @@ export default {
                 </li>
             </ul>
             <div class="row">
-                <div class="col-6">
-                    <img src="/img/cms-banner-01.jpg">
-                    <div class="info">
-                        <div class="badge">
-                            <p class="badge-text">Most Popular</p>
-                        </div>
-                        <div class="info-text" >The Battlefield 4 Naval Strike</div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <img src="/img/cms-banner-02.jpg">
-                    <div class="info">
-                        <div class="badge">
-                            <p class='badge-text'>Latest Game</p>
-                        </div>
-                        <div class="info-text">Assassin's Creed Unity Game</div>
-                    </div>
+                <div class="col-6"
+                v-for="game in store.gamesInEvidence">
+                    <GameCard
+                    :game="game"/>
                 </div>
             </div>
     </section>

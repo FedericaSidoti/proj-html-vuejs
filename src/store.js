@@ -9,6 +9,20 @@ export const store = reactive({
         "ShortCode",
         "Features"
     ],
+    gamesInEvidence : [
+        {
+            tag: 'Most Popular',
+            title: 'The Battlefield 4 Naval Strike'
+        },
+        {
+            tag: 'Latest Game',
+            title: 'Assassin\'s Creed Unity Game'
+        }
+
+    ],
+    gamesInDiscount : [
+
+    ],
     products : [
         {
             title: 'Shopping Mahjong Connect',
