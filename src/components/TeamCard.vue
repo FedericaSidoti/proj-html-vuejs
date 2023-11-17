@@ -24,7 +24,7 @@ export default {
         </div>
         <div class="role">
             <span class="name">{{ member.name }}</span> 
-            <span class="work">({{ member.role }})</span>
+            <span class="yllw-text">({{ member.role }})</span>
         </div>
         <p class="cit">"{{ member.cit }}"</p>
         
@@ -34,6 +34,8 @@ export default {
 <style lang="scss" scoped>
 
 @use '../styles/partials/variables.scss' as * ; 
+
+//layout card
 .card-body{
     display: flex; 
     flex-direction: column; 
@@ -45,25 +47,6 @@ export default {
 .wrap {
     position: relative;
 }
-
-.role {
-    display: flex; 
-    gap: 8px; 
-}
-
-.name {
-    font-weight: 500; 
-}
-
-.work {
-    color: $yellow; 
-}
-
-.cit {
-    font-size: 15px; 
-    color: gray; 
-}
-
 .member-wrap {
     aspect-ratio: 1; 
     background-color: $white;
@@ -73,13 +56,28 @@ export default {
     border: 2px solid $yellow;  
 }
 
+//css elementi della card
+.role {
+    display: flex; 
+    gap: 8px; 
+}
+
+.name {
+    font-weight: 500; 
+}
+
 .quote {
-        position : absolute; 
-        aspect-ratio: 1;
-        border-radius : 50%;
-        background-color: $yellow ;
-        padding: 6px 10px; 
-        top: 0; 
-        left: -8px; 
-    }
+    position : absolute; 
+    aspect-ratio: 1;
+    border-radius : 50%;
+    background-color: $yellow ;
+    padding: 6px 10px; 
+    top: 0; 
+    left: -8px; 
+}
+.cit {
+    font-size: 15px; 
+    color: gray; 
+}
+
 </style>

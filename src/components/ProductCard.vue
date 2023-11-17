@@ -73,7 +73,6 @@ export default {
         display: flex; 
     }
 }
-
 .wrap {
     padding: 5px; 
 }
@@ -114,7 +113,5 @@ export default {
     border: 1px solid $darkgray; 
     padding: 3px; 
 }
-
-
 
 </style>

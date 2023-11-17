@@ -34,7 +34,7 @@ export default {
             </li>
             <li>
                 <font-awesome-icon :icon="['fas', 'bag-shopping']" />
-                <span class="yellow-colour"> 0 £0.00</span>
+                <span class="yllw-text"> 0 £0.00</span>
             </li>
         </ul>
     </div>
@@ -82,7 +82,4 @@ export default {
     display: none;  
 }
 
-.yellow-colour{
-    color : $yellow; 
-}
 </style>

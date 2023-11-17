@@ -40,7 +40,7 @@ export default {
                 <div class="index">
                     <span class="wrap-icon"
                     v-for="item, index in store.members"
-                    :class="index===currentDot? 'active-text' : ''">
+                    :class="index===currentDot? 'yllw-text' : ''">
                         <font-awesome-icon :icon="['fas', 'circle']" />
                     </span>
                 </div>
@@ -61,10 +61,6 @@ export default {
     position: relative;  
 }
 
-.active-text {
-    color: $yellow;  
-}
-
 .container {
     display: flex; 
     flex-direction: column; 
@@ -80,7 +76,6 @@ export default {
     display: none; 
     z-index: -1 
 }
-
 .active {
     display: flex; 
 }
