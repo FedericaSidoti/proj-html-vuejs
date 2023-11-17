@@ -28,7 +28,7 @@ export default {
             if (this.currentIndex === -1) {
                 this.currentIndex = this.store.menuProducts.length -1
             }
-        }    
+        },
     },
     computed : {
         arrayActive : function(){
@@ -98,20 +98,24 @@ export default {
 }
 
 .row {
-    position: relative;  
+    position: relative; 
+    opacity: 1; 
+    transition: all 2s ease;  
 }
 
 .active-text {
     color: $yellow; 
 }
 
-.d-none {
-    display: none;
-    z-index: -1;  
+.row.d-none {
+    display: none; 
+    opacity: 0; 
+    z-index: -1; 
 }
 
-.active {
+.row.active {
     display: flex; 
+    opacity: 1; 
 }
 
 .next {
