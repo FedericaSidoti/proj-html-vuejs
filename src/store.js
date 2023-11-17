@@ -21,6 +21,20 @@ export const store = reactive({
             src: 'cms-banner-02.jpg'
         }
     ],
+    categories : [
+        {
+            name: 'Batman',
+            img: 'category-image-01-446x550_t.jpg'
+        },
+        {
+            name: 'Bayonetta',
+            img: 'category-image-02-446x550_t.jpg'
+        },
+        {
+            name: 'Dark Souls',
+            img: 'category-image-03-446x550_t.jpg'
+        }
+    ],
     gamesInDiscount : [
         {
             tag: '20% Discount',
