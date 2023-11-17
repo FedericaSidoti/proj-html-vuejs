@@ -44,6 +44,7 @@
 }
 /*Utilities*/
 
+// badges on cards
 .badge {
     padding: 5px 10px; 
     transform: skew(-20deg); 
@@ -57,18 +58,24 @@
     font-weight: 900; 
 }
 
-.products-wrap {
-    background-color: #170e1f;
-}
+//testi colorati
 
 .light-text {
     color: gray; 
 }
 
+.yllw-text {
+    color: $yellow; 
+}
+
+//utilities ripetute
+
 .center {
     align-items: center; 
     justify-content: center; 
 }
+
+//css comune ad ogni sezione
 
 .section-title {
     margin-bottom: 30px; 
@@ -87,6 +94,7 @@
     }
 }
 
+//css comune a tutti i menu dei caroselli
 .list-border {
     display: flex;  
     margin-bottom: 25px;

@@ -77,8 +77,11 @@ export default {
 .wrap {
     padding: 5px; 
 }
+.products-wrap {
+    background-color: #170e1f;
+}
 
-//decorazioni e badges
+//decorazioni e adattamento badges
 .stars {
     color: $yellow; 
 }
