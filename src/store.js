@@ -86,60 +86,60 @@ export const store = reactive({
         [
             {
                 title: 'Shopping Mahjong Connect',
-                vote: 4, 
-                discount: 44, 
-                price: 100,
+                vote: 3, 
+                discount: 37, 
+                price: 130,
                 src: '05-768x768.jpg'
             },
             {
                 title: 'Buddy and Lucky Solitaire',
                 vote: 0, 
                 discount: 0, 
-                price: 83,
+                price: 67,
                 src: '06-768x768.jpg'
             },
             {
                 title: 'Taishou x Alice Epilogue',
-                vote: 0, 
-                discount: 0, 
-                price: 90,
+                vote: 1, 
+                discount: 10, 
+                price: 95,
                 src: '07-768x768.jpg'
             },
             {
                 title: 'Labirinth of the World',
                 vote: 2, 
                 discount: 0, 
-                price: 110,
+                price: 10,
                 src: '08-768x768.jpg'
             }
         ],
         [
             {
                 title: 'Shopping Mahjong Connect',
-                vote: 4, 
-                discount: 44, 
-                price: 100,
+                vote: 5, 
+                discount: 43, 
+                price: 180,
                 src: '09-768x768.jpg'
             },
             {
                 title: 'Buddy and Lucky Solitaire',
                 vote: 0, 
                 discount: 0, 
-                price: 83,
+                price: 73,
                 src: '10-768x768.jpg'
             },
             {
                 title: 'Taishou x Alice Epilogue',
                 vote: 0, 
                 discount: 0, 
-                price: 90,
+                price: 98,
                 src: '11-768x768.jpg'
             },
             {
                 title: 'Labirinth of the World',
                 vote: 2, 
                 discount: 0, 
-                price: 110,
+                price: 60,
                 src: '12-768x768.jpg'
             }
         ],
@@ -185,28 +185,28 @@ export const store = reactive({
         [
             {
                 title: 'Shopping Mahjong Connect',
-                vote: 4, 
-                discount: 44, 
+                vote: 2, 
+                discount: 20, 
                 price: 100,
                 src: '04-768x768.jpg'
             },
             {
                 title: 'BangBangShooting',
-                vote: 0, 
-                discount: 0, 
-                price: 56,
+                vote: 1, 
+                discount: 10, 
+                price: 156,
                 src: '06-768x768.jpg'
             },
             {
                 title: 'Buddy and Lucky Solitaire',
                 vote: 0, 
                 discount: 0, 
-                price: 83,
+                price: 183,
                 src: '07-768x768.jpg'
             },
             {
                 title: 'Taishou x Alice Epilogue',
-                vote: 0, 
+                vote: 2, 
                 discount: 0, 
                 price: 90,
                 src: '08-768x768.jpg'
@@ -215,30 +215,30 @@ export const store = reactive({
         [
             {
                 title: 'Shopping Mahjong Connect',
-                vote: 4, 
-                discount: 44, 
-                price: 100,
+                vote: 1, 
+                discount: 15, 
+                price: 110,
                 src: '09-768x768.jpg'
             },
             {
                 title: 'BangBangShooting',
                 vote: 0, 
                 discount: 0, 
-                price: 56,
+                price: 96,
                 src: '10-768x768.jpg'
             },
             {
                 title: 'Buddy and Lucky Solitaire',
                 vote: 0, 
                 discount: 0, 
-                price: 83,
+                price: 88,
                 src: '11-768x768.jpg'
             },
             {
                 title: 'Taishou x Alice Epilogue',
-                vote: 0, 
-                discount: 0, 
-                price: 90,
+                vote: 5, 
+                discount: 70, 
+                price: 190,
                 src: '12-768x768.jpg'
             }
         ],
@@ -252,22 +252,22 @@ export const store = reactive({
             },
             {
                 title: 'BangBangShooting',
-                vote: 0, 
+                vote: 4, 
                 discount: 0, 
-                price: 56,
+                price: 256,
                 src: '14-768x768.jpg'
             },
             {
                 title: 'Buddy and Lucky Solitaire',
                 vote: 0, 
                 discount: 0, 
-                price: 83,
+                price: 53,
                 src: '15-768x768.jpg'
             },
             {
                 title: 'Taishou x Alice Epilogue',
                 vote: 0, 
-                discount: 0, 
+                discount: 10, 
                 price: 90,
                 src: '16-768x768.jpg'
             }

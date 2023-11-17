@@ -12,7 +12,8 @@ export default {
     }, 
     computed : {
         discountedPrice : function() {
-            const discounted = (this.product.price * this.product.discount) / 100 ; 
+            const discount = (this.product.price * this.product.discount) / 100 ; 
+            const discounted = this.product.price - discount
             return discounted
         }
     }
