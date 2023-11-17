@@ -11,6 +11,7 @@ export default {
         }
     }, 
     computed : {
+        // calcola il prezzo scontato 
         discountedPrice : function() {
             const discount = (this.product.price * this.product.discount) / 100 ; 
             const discounted = this.product.price - discount
@@ -63,26 +64,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *; 
 
-.stars {
-    color: $yellow; 
-}
-
-.actions {
-    position: absolute; 
-    bottom: -5px; 
-    right: 0; 
-    left: 0; 
-    background-color: #170e1f; 
-    display: none; 
-}
-
-.action {
-    flex-basis : calc(100% / 4);
-    text-align: center; 
-    border: 1px solid $darkgray; 
-    padding: 3px; 
-}
-
+// elementi esterni
 .figure {
     position: relative;
     height: 100%;  
@@ -92,6 +74,14 @@ export default {
     }
 }
 
+.wrap {
+    padding: 5px; 
+}
+
+//decorazioni e badges
+.stars {
+    color: $yellow; 
+}
 .badge-text {
     font-size: 12px; 
 }
@@ -109,9 +99,23 @@ export default {
     left: 20px; 
 }
 
-.wrap {
-    padding: 5px; 
+//menu in hover 
+.actions {
+    position: absolute; 
+    bottom: -5px; 
+    right: 0; 
+    left: 0; 
+    background-color: #170e1f; 
+    display: none; 
 }
+
+.action {
+    flex-basis : calc(100% / 4);
+    text-align: center; 
+    border: 1px solid $darkgray; 
+    padding: 3px; 
+}
+
 
 
 </style>
