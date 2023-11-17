@@ -23,6 +23,10 @@ import { faSkype } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faHandPointUp } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faArrowsUpDownLeftRight } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 library.add(faUser, 
     faMagnifyingGlass, 
     faShoppingBag, 
@@ -43,7 +47,11 @@ library.add(faUser,
     faSkype,
     faInstagram,
     faPlus,
-    faLink)
+    faLink, 
+    faHandPointUp,
+    faHeart,
+    faArrowsUpDownLeftRight,
+    faEye)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)

@@ -120,14 +120,14 @@ export default {
 
 .next {
     position: absolute; 
-    top: 100px; 
+    top: 110px; 
     right: -20px; 
     cursor: pointer; 
 }
 
 .prew {
     position: absolute; 
-    top: 100px; 
+    top: 110px; 
     left: -20px; 
     cursor: pointer;
 }

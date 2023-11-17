@@ -75,7 +75,7 @@ export default {
                 />
             </div>
             <div class="next" @click="nextButton(item)">
-                <img src="/img/next.png">
+                <img class="arrow-btn" src="/img/next.png">
             </div>
             <div class="prew" @click="prewButton(item)">
                 <img src="/img/previous.png">
@@ -106,14 +106,15 @@ export default {
 
 .next {
     position: absolute; 
-    top: 100px; 
-    right: -20px; 
+    top: 110px; 
+    right: -20px;   
     cursor: pointer; 
 }
 
+
 .prew {
     position: absolute; 
-    top: 100px; 
+    top: 110px; 
     left: -20px; 
     cursor: pointer;
 }
