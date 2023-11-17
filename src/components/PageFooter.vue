@@ -93,6 +93,7 @@ export default {
         gap: 15px; 
         align-items : flex-start; 
         margin-right: 15px; 
+        cursor: pointer; 
 
         &:hover {
             color: $yellow; 
@@ -112,6 +113,7 @@ export default {
 .socials {
     display: flex; 
     gap: 20px; 
+    cursor: pointer; 
 }
 
 .social:hover {

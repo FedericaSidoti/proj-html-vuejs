@@ -52,6 +52,7 @@ export default {
 
 .list-item {
     position: relative; 
+    cursor: pointer; 
 
     &:hover .nav-menu {
         display: flex; 
