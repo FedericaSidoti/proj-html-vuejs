@@ -35,16 +35,8 @@ export default {
     },
     computed : {
         arrayActive : function(){
-            if (this.currentIndex === 0) {
-                this.currentArray = this.store.products.featured
-                return this.currentArray
-            } else if (this.currentIndex === 1) {
-                this.currentArray = this.store.products.newArrivals
-                return this.currentArray
-            } else {
-                this.currentArray = this.store.products.bestSellers
-                return this.currentArray
-            }
+            this.currentArray = this.store.products[this.currentIndex]
+            return this.currentArray
         }
     }
 } 

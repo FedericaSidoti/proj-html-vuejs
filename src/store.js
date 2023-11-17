@@ -52,8 +52,8 @@ export const store = reactive({
         'New Arrivals',
         'Best Sellers'
     ],
-    products : {
-        featured : [
+    products : [
+        [
             {
                 title: 'Shopping Mahjong Connect',
                 vote: 4, 
@@ -83,7 +83,7 @@ export const store = reactive({
                 src: '04-768x768.jpg'
             }
         ],
-        newArrivals: [
+        [
             {
                 title: 'Shopping Mahjong Connect',
                 vote: 4, 
@@ -113,7 +113,7 @@ export const store = reactive({
                 src: '08-768x768.jpg'
             }
         ],
-        bestSellers : [
+        [
             {
                 title: 'Shopping Mahjong Connect',
                 vote: 4, 
@@ -144,15 +144,15 @@ export const store = reactive({
             }
         ],
         
-    },
+    ],
     menuDeals: [
         '1026 days',
         '13 hours',
         '24 mins',
         '17 secs'
     ],
-    deals : {
-        days: [
+    deals : [
+        [
             {
                 title: 'Shopping Mahjong Connect',
                 vote: 4, 
@@ -182,7 +182,7 @@ export const store = reactive({
                 src: '03-768x768.jpg'
             }
         ],
-        hours: [
+        [
             {
                 title: 'Shopping Mahjong Connect',
                 vote: 4, 
@@ -212,7 +212,7 @@ export const store = reactive({
                 src: '08-768x768.jpg'
             }
         ],
-        mins : [
+        [
             {
                 title: 'Shopping Mahjong Connect',
                 vote: 4, 
@@ -242,7 +242,7 @@ export const store = reactive({
                 src: '12-768x768.jpg'
             }
         ],
-        secs : [
+        [
             {
                 title: 'Shopping Mahjong Connect',
                 vote: 4, 
@@ -272,7 +272,7 @@ export const store = reactive({
                 src: '16-768x768.jpg'
             }
         ],
-    },
+    ],
     members : [
         {
             name: 'Lules Charles',

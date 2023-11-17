@@ -33,20 +33,8 @@ export default {
     },
     computed : {
         arrayActive : function(){
-            if (this.currentIndex === 0) {
-                this.currentArray = this.store.deals.days
-                return this.currentArray
-            } else if (this.currentIndex === 1) {
-                this.currentArray = this.store.deals.hours
-                return this.currentArray
-            } else if (this.currentIndex ===2 ){
-                this.currentArray = this.store.deals.mins
-                return this.currentArray
-            } else {
-                this.currentArray = this.store.deals.secs
-                return this.currentArray
-            }
-            
+            this.currentArray = this.store.deals[this.currentIndex]
+            return this.currentArray
         }
     }
 } 
