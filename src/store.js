@@ -145,36 +145,134 @@ export const store = reactive({
         ],
         
     },
-    deals : [
-        {
-            title: 'Shopping Mahjong Connect',
-            vote: 4, 
-            discount: 44, 
-            price: 100,
-            src: '01-768x768.jpg'
-        },
-        {
-            title: 'BangBangShooting',
-            vote: 0, 
-            discount: 0, 
-            price: 56,
-            src: '05-768x768.jpg'
-        },
-        {
-            title: 'Buddy and Lucky Solitaire',
-            vote: 0, 
-            discount: 0, 
-            price: 83,
-            src: '02-768x768.jpg'
-        },
-        {
-            title: 'Taishou x Alice Epilogue',
-            vote: 0, 
-            discount: 0, 
-            price: 90,
-            src: '03-768x768.jpg'
-        },
+    menuDeals: [
+        '1026 days',
+        '13 hours',
+        '24 mins',
+        '17 secs'
     ],
+    deals : {
+        days: [
+            {
+                title: 'Shopping Mahjong Connect',
+                vote: 4, 
+                discount: 44, 
+                price: 100,
+                src: '01-768x768.jpg'
+            },
+            {
+                title: 'BangBangShooting',
+                vote: 0, 
+                discount: 0, 
+                price: 56,
+                src: '05-768x768.jpg'
+            },
+            {
+                title: 'Buddy and Lucky Solitaire',
+                vote: 0, 
+                discount: 0, 
+                price: 83,
+                src: '02-768x768.jpg'
+            },
+            {
+                title: 'Taishou x Alice Epilogue',
+                vote: 0, 
+                discount: 0, 
+                price: 90,
+                src: '03-768x768.jpg'
+            }
+        ],
+        hours: [
+            {
+                title: 'Shopping Mahjong Connect',
+                vote: 4, 
+                discount: 44, 
+                price: 100,
+                src: '04-768x768.jpg'
+            },
+            {
+                title: 'BangBangShooting',
+                vote: 0, 
+                discount: 0, 
+                price: 56,
+                src: '06-768x768.jpg'
+            },
+            {
+                title: 'Buddy and Lucky Solitaire',
+                vote: 0, 
+                discount: 0, 
+                price: 83,
+                src: '07-768x768.jpg'
+            },
+            {
+                title: 'Taishou x Alice Epilogue',
+                vote: 0, 
+                discount: 0, 
+                price: 90,
+                src: '08-768x768.jpg'
+            }
+        ],
+        mins : [
+            {
+                title: 'Shopping Mahjong Connect',
+                vote: 4, 
+                discount: 44, 
+                price: 100,
+                src: '09-768x768.jpg'
+            },
+            {
+                title: 'BangBangShooting',
+                vote: 0, 
+                discount: 0, 
+                price: 56,
+                src: '10-768x768.jpg'
+            },
+            {
+                title: 'Buddy and Lucky Solitaire',
+                vote: 0, 
+                discount: 0, 
+                price: 83,
+                src: '11-768x768.jpg'
+            },
+            {
+                title: 'Taishou x Alice Epilogue',
+                vote: 0, 
+                discount: 0, 
+                price: 90,
+                src: '12-768x768.jpg'
+            }
+        ],
+        secs : [
+            {
+                title: 'Shopping Mahjong Connect',
+                vote: 4, 
+                discount: 44, 
+                price: 100,
+                src: '13-768x768.jpg'
+            },
+            {
+                title: 'BangBangShooting',
+                vote: 0, 
+                discount: 0, 
+                price: 56,
+                src: '14-768x768.jpg'
+            },
+            {
+                title: 'Buddy and Lucky Solitaire',
+                vote: 0, 
+                discount: 0, 
+                price: 83,
+                src: '15-768x768.jpg'
+            },
+            {
+                title: 'Taishou x Alice Epilogue',
+                vote: 0, 
+                discount: 0, 
+                price: 90,
+                src: '16-768x768.jpg'
+            }
+        ],
+    },
     members : [
         {
             name: 'Lules Charles',

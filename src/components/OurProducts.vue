@@ -12,18 +12,21 @@ export default {
             store: store,
             currentArray: [],
             currentIndex: 0,
+            currentRow: null, 
         }
     },
     methods : {
-        nextButton (){
+        nextButton (item){
             this.currentIndex ++; 
+            this.currentRow = item
 
             if (this.currentIndex === this.store.menuProducts.length) {
                 this.currentIndex = 0
             }
         }, 
-        prewButton() {
+        prewButton(item) {
             this.currentIndex --; 
+            this.currentRow = item
 
             if (this.currentIndex === -1) {
                 this.currentIndex = this.store.menuProducts.length -1
@@ -42,7 +45,6 @@ export default {
                 this.currentArray = this.store.products.bestSellers
                 return this.currentArray
             }
-            
         }
     }
 } 
@@ -70,10 +72,10 @@ export default {
                 :product = product
                 />
             </div>
-            <div class="next" @click="nextButton()">
+            <div class="next" @click="nextButton(item)">
                 <img src="/img/next.png">
             </div>
-            <div class="prew" @click="prewButton()">
+            <div class="prew" @click="prewButton(item)">
                 <img src="/img/previous.png">
             </div>
         </div>
@@ -103,9 +105,7 @@ export default {
     transition: all 2s ease;  
 }
 
-.active-text {
-    color: $yellow; 
-}
+
 
 .row.d-none {
     display: none; 
@@ -130,6 +130,10 @@ export default {
     top: 100px; 
     left: -20px; 
     cursor: pointer;
+}
+
+.active-text {
+    color: $yellow; 
 }
 
 </style>
