@@ -11,8 +11,7 @@ export default {
         return { 
             store: store,
             currentArray: [],
-            currentIndex: 0,
-            currentRow: null, 
+            currentIndex: 0, 
         }
     },
     methods : {
@@ -110,19 +109,6 @@ export default {
     opacity: 1; 
 }
 
-.next {
-    position: absolute; 
-    top: 110px; 
-    right: -20px; 
-    cursor: pointer; 
-}
-
-.prew {
-    position: absolute; 
-    top: 110px; 
-    left: -20px; 
-    cursor: pointer;
-}
 
 .active-text {
     color: $yellow; 

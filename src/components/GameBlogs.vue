@@ -8,11 +8,36 @@ export default {
     data() {
         return {  
             store : store,
+            currentArray: [],
+            currentIndex: 0, 
         }
     },
-    props: {
+    methods : {
+        nextButton (item){
+            this.currentIndex ++; 
+            this.currentRow = item
+
+            if (this.currentIndex === this.store.blogs.length) {
+                this.currentIndex = 0
+            }
+        }, 
+        prewButton(item) {
+            this.currentIndex --; 
+            this.currentRow = item
+
+            if (this.currentIndex === -1) {
+                this.currentIndex = this.store.blogs.length -1
+            }
+        },
+    },
+    computed : {
+        arrayActive : function(){
+            this.currentArray = this.store.blogs[this.currentIndex]
+            return this.currentArray
+        }
     }
 } 
+
 </script>
 
 <template>
@@ -20,9 +45,10 @@ export default {
         <div class="row center">
             <h2 class="section-title">New Game Blog</h2>
         </div>
-        <div class="row arrows">
+        <div class="row arrows" v-for="item, index in this.store.blogs"
+        :class="index === currentIndex? 'active' : 'd-none'">
             <div class="col-4"
-            v-for="blog in store.blogs">
+            v-for="blog in arrayActive">
                 <CardBlog
                 :blog = blog 
                 />
@@ -35,10 +61,10 @@ export default {
                     </span>
                 </div>
             </div>
-            <div class="arrow next">
+            <div class="arrow next" @click="nextButton(item)">
                 <img src="/img/next.png">
             </div>
-            <div class="arrow prew">
+            <div class="arrow prew" @click="prewButton(item)">
                 <img src="/img/previous.png">
             </div>
         </div>
@@ -109,5 +135,16 @@ export default {
     .prew {
         left: -10px; 
     }
+}
+
+.row.d-none {
+    display: none; 
+    opacity: 0; 
+    z-index: -1; 
+}
+
+.row.active {
+    display: flex; 
+    opacity: 1; 
 }
 </style>

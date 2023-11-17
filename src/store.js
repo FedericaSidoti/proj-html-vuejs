@@ -294,6 +294,7 @@ export const store = reactive({
         }
     ],
     blogs : [
+    [
         {
             name : 'On The Last Of Us: Lorem Ipsum is simply text',
             date: 'Jen 18, 2021',
@@ -312,6 +313,28 @@ export const store = reactive({
             comments: 0, 
             src : 'Rerum-facilis-est-et-exped.jpg'
         }
+    ],
+    [
+        {
+            name : 'On Pokèmon: Lorem Ipsum is simply text',
+            date: 'Jen 18, 2021',
+            comments: 0,
+            src : 'Architecto-beatae-vitae-dicta.jpg'
+        },
+        {
+            name : 'On Baldur\'sGate: Lorem Ipsum is simply text',
+            date: 'May 30, 2021',
+            comments: 0, 
+            src : 'At-vero-eos-et-accusamus.jpg'
+        },
+        {
+            name : 'On DragonBall: Lorem Ipsum is simply text',
+            date: 'Apr 13, 2021',
+            comments: 0, 
+            src : 'Blandit-praesen-volupta.jpg'
+        }
+    ],
+        
     ],
     partners : [
         'brand-01.png',

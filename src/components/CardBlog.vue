@@ -17,11 +17,11 @@ export default {
         <img :src="'/img/' + blog.src">
         <div class="blog-info">
             <span class="date">
-                <font-awesome-icon class="icon" :icon="['fas', 'calendar-days']" />
+                <font-awesome-icon class="yllw-text" :icon="['fas', 'calendar-days']" />
                 {{ blog.date }}
             </span>
             <span class="comment">
-                <font-awesome-icon class="icon" :icon="['fas', 'comments']" />
+                <font-awesome-icon class="yllw-text" :icon="['fas', 'comments']" />
                 {{ blog.comments }} comments
             </span>
         </div>
@@ -50,9 +50,5 @@ export default {
 .text {
     font-weight: 500;
     font-size: 13px; 
-}
-
-.icon {
-    color: $yellow; 
 }
 </style>

@@ -105,3 +105,17 @@
         padding: 10px 15px; 
     }
 }
+
+.next {
+    position: absolute; 
+    top: 110px; 
+    right: -20px; 
+    cursor: pointer; 
+}
+
+.prew {
+    position: absolute; 
+    top: 110px; 
+    left: -20px; 
+    cursor: pointer;
+}

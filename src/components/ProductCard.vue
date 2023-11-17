@@ -28,13 +28,13 @@ export default {
     <!-- info della card -->
     <div class="wrap">
         <!-- voto in stelle -->
-            <span class="stars" v-for="star in product.vote">&#10030;</span>
+            <span class="yllw-text" v-for="star in product.vote">&#10030;</span>
             <span v-for="star in (5-product.vote)">&#10030;</span>
         <!-- titolo prodotto -->
         <p>{{ product.title }}</p>
         <!-- prezzo ed eventuale prezzo scontato -->
         <div>
-            <span class="price" :class="product.discount !== 0? 'old-price' : ''"> ${{ product.price }} </span>
+            <span class="yllw-text" :class="product.discount !== 0? 'old-price' : ''"> ${{ product.price }} </span>
             <span v-if="product.discount !== 0" class="price"> ${{ discountedPrice }}</span>
         </div>
     </div>
@@ -82,15 +82,11 @@ export default {
 }
 
 //decorazioni e adattamento badges
-.stars {
-    color: $yellow; 
-}
+
 .badge-text {
     font-size: 12px; 
 }
-.price{
-    color: $yellow; 
-}
+
 .old-price {
     text-decoration: line-through;
     color: $white; 
