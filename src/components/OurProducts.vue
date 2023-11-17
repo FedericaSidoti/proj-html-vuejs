@@ -17,7 +17,6 @@ export default {
     methods : {
         nextButton (item){
             this.currentIndex ++; 
-            this.currentRow = item
 
             if (this.currentIndex === this.store.menuProducts.length) {
                 this.currentIndex = 0
@@ -25,7 +24,6 @@ export default {
         }, 
         prewButton(item) {
             this.currentIndex --; 
-            this.currentRow = item
 
             if (this.currentIndex === -1) {
                 this.currentIndex = this.store.menuProducts.length -1
@@ -46,7 +44,9 @@ export default {
         <div class="row center">
             <div class='section-info'>
                 <h2 class="section-title">Our Products</h2>
+                <!-- menu: ogni voce di menu corrisponde ad un array in products -->
                 <ul class="list-border">
+                    <!-- qui viene stampata ogni voce del menu -->
                     <li class="item-border"  
                     v-for="item, index in store.menuProducts"
                     :class="index === currentIndex? 'yllw-text' : ''">
@@ -55,14 +55,19 @@ export default {
             </div>
             
         </div>
-        <div class="row" v-for="item, index in store.menuProducts"
-        :class="index === currentIndex? 'active' : 'd-none'">
+        <!-- viene stampata una row per ogni array dentro products -->
+        <!-- se l'indice dell'array in ciclo corrisponde al currentIndex (che cambia al click) -->
+        <!-- allora la row riceve la classe active che sovrascrive il d-none -->
+        <div class="row" v-for="item, index in store.products"
+        :class="index === currentIndex? 'active' : ''">
             <div class="col-3 "
             v-for="product, index in arrayActive">
+            <!-- grazie alla computed, arrayActive è sempre l'array al currentindex! -->
                 <ProductCard
                 :product = product
                 />
             </div>
+            <!-- i due buttons in absolute -->
             <div class="next" @click="nextButton(item)">
                 <img src="/img/next.png">
             </div>
@@ -70,6 +75,7 @@ export default {
                 <img src="/img/previous.png">
             </div>
         </div>
+        <!-- stampa l'array dei giochi in sconto  -->
         <div class="row">
             <div class="col-6"
             v-for="game in store.gamesInDiscount">
@@ -87,9 +93,7 @@ export default {
 
 .row {
     position: relative; 
-    opacity: 1; 
 }
-
 .col-3 {
     margin-bottom: 50px; 
 }
