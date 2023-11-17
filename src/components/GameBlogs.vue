@@ -81,7 +81,6 @@ export default {
 .center {
     padding: 20px 0; 
 }
-
 .col-4 {
     border-bottom: 1px solid gray; 
     padding: 15px; 
@@ -120,7 +119,6 @@ export default {
     &:hover .arrow{
         display: inline-block; 
     }
-
     .arrow {
         display: none; 
         position: absolute; 

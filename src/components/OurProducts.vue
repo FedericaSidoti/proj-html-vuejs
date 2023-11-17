@@ -49,7 +49,7 @@ export default {
                 <ul class="list-border">
                     <li class="item-border"  
                     v-for="item, index in store.menuProducts"
-                    :class="index === currentIndex? 'active-text' : ''">
+                    :class="index === currentIndex? 'yllw-text' : ''">
                     {{ item }}</li>
                 </ul>
             </div>
@@ -98,20 +98,5 @@ export default {
     position: relative;
 }
 
-.row.d-none {
-    display: none; 
-    opacity: 0; 
-    z-index: -1; 
-}
-
-.row.active {
-    display: flex; 
-    opacity: 1; 
-}
-
-
-.active-text {
-    color: $yellow; 
-}
 
 </style>
