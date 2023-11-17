@@ -83,10 +83,6 @@ export default {
     position: relative; 
 }
 
-.section-title {
-    padding-bottom: 20px; 
-}
-
 .list-border {
     padding-bottom: 10px;
 }

@@ -53,7 +53,7 @@ h1 {
 }
 
 .btn{
-    padding: 4px 6px; 
+    padding: 6px 8px; 
     &:hover {
         background-color: $yellow;
     }
