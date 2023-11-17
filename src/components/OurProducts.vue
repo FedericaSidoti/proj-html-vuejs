@@ -58,7 +58,7 @@ export default {
         </div>
         <div class="row" v-for="item, index in store.menuProducts"
         :class="index === currentIndex? 'active' : 'd-none'">
-            <div class="col-3"
+            <div class="col-3 "
             v-for="product, index in arrayActive">
                 <ProductCard
                 :product = product
@@ -72,7 +72,7 @@ export default {
             </div>
         </div>
         <div class="row">
-            <div class="col-6 p-rel"
+            <div class="col-6"
             v-for="game in store.gamesInDiscount">
                 <GameCard
                 :game = game
@@ -86,18 +86,18 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as * ; 
 
-
-.p-rel {
-    position: relative;
-}
-
 .row {
     position: relative; 
     opacity: 1; 
-    transition: all 2s ease;  
 }
 
+.col-3 {
+    margin-bottom: 50px; 
+}
 
+.col-6 {
+    position: relative;
+}
 
 .row.d-none {
     display: none; 

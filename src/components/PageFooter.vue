@@ -76,6 +76,7 @@ export default {
 @use '../styles/partials/variables.scss' as *; 
 .container-fluid {
     background-image: url(/img/footer-bg.png);
+    padding: 10px; 
 }
 
 .footer-title {

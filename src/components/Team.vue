@@ -28,8 +28,8 @@ export default {
 </script>
 
 <template>
-    <div class='container-fluid'>
-        <div class="section">
+    <div class="section">
+        <div class='container-fluid'>
             <div class="container">
                     <TeamCard
                     v-for="member, index in store.members"

@@ -48,48 +48,57 @@ export default {
                 <ul class="list-border">
                     <li class="item-border"  
                     v-for="item, index in store.menuDeals"
+                    :key="index"
                     :class="index === currentIndex? 'active-text' : ''">
                     {{ item }}</li>
                 </ul>
             </div>
         </div>
-        <div class="row slider"
-        v-for="item, index in store.menuDeals"
-        :class="index === currentIndex? 'active' : 'd-none'">
-            <div class="col-3"
-            v-for="deal in arrayActive">
-                <ProductCard
-                :product = deal
-                />
+            <div class="row slider"
+            v-for="item, index in store.menuDeals"
+            :class="index === currentIndex? 'active' : ''"
+            :key="index">
+                <div class="col-3"
+                v-for="deal, index in arrayActive"
+                :key="index">
+                    <ProductCard
+                    :product = deal
+                    />
+                </div>
+                <div class="next" @click="nextButton(item)">
+                    <img class="arrow-btn" src="/img/next.png">
+                </div>
+                <div class="prew" @click="prewButton(item)">
+                    <img src="/img/previous.png">
+                </div>
             </div>
-            <div class="next" @click="nextButton(item)">
-                <img class="arrow-btn" src="/img/next.png">
-            </div>
-            <div class="prew" @click="prewButton(item)">
-                <img src="/img/previous.png">
-            </div>
-        </div>
     </div>
 
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as * ; 
-.slider {
+
+.section {
     position: relative; 
-    opacity: 1; 
-    transition: all 2s ease;  
 }
 
-.slider.d-none {
-    display: none; 
+.section-title {
+    padding-bottom: 20px; 
+}
+
+.list-border {
+    padding-bottom: 10px;
+}
+.slider {
+    position: relative; 
     opacity: 0; 
-    z-index: -1; 
+    display : none;  
 }
 
 .slider.active {
-    display: flex; 
-    opacity: 1; 
+    opacity: 1;  
+    display: flex;
 }
 
 .next {
@@ -110,4 +119,5 @@ export default {
 .active-text {
     color : $yellow; 
 }
+
 </style>

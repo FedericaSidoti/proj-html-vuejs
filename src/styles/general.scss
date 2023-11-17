@@ -42,7 +42,8 @@ a{
 }
 
 .section {
-    padding: 30px 0px; 
+    padding: 10px; 
+    margin-bottom: 30px; 
 }
 
 .row {
@@ -82,6 +83,10 @@ a{
     color: black; 
     transform: skew(20deg);
     font-weight: 900; 
+}
+
+.products-wrap {
+    background-color: #170e1f;
 }
 
 .light-text {
