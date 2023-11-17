@@ -25,11 +25,10 @@ export default {
     <!-- immagine -->
         <img :src="'/img/' + product.src ">
     <!-- info della card -->
+    <div class="wrap">
         <!-- voto in stelle -->
-        <div class="wrap">
             <span class="stars" v-for="star in product.vote">&#10030;</span>
             <span v-for="star in (5-product.vote)">&#10030;</span>
-        </div>
         <!-- titolo prodotto -->
         <p>{{ product.title }}</p>
         <!-- prezzo ed eventuale prezzo scontato -->
@@ -37,6 +36,7 @@ export default {
             <span class="price" :class="product.discount !== 0? 'old-price' : ''"> ${{ product.price }} </span>
             <span v-if="product.discount !== 0" class="price"> ${{ discountedPrice }}</span>
         </div>
+    </div>
     <!-- badge eventuale sconto in absolute -->
         <div v-if="product.discount !== 0" class="badge">
             <p class=" badge-text"> - {{ product.discount }} %</p>
@@ -107,6 +107,10 @@ export default {
     position: absolute; 
     top: 10px; 
     left: 20px; 
+}
+
+.wrap {
+    padding: 5px; 
 }
 
 
