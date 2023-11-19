@@ -59,7 +59,7 @@ export default {
         <!-- se l'indice dell'array in ciclo corrisponde al currentIndex (che cambia al click) -->
         <!-- allora la row riceve la classe active che sovrascrive il d-none -->
         <div class="row" v-for="item, index in store.products"
-        :class="index === currentIndex? 'active' : ''">
+        :class="index === currentIndex? 'active' : 'd-none'">
             <div class="col-3 "
             v-for="product, index in arrayActive">
             <!-- grazie alla computed, arrayActive è sempre l'array al currentindex! -->
